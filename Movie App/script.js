@@ -11,7 +11,6 @@ getMovies(API_URL)
 async function getMovies(url){
     const res = await fetch(url)
     const data = await res.json()
-
     console.log(data.results)
     showMovies(data.results)
 }
@@ -50,7 +49,6 @@ function showMovies(movies){
                 `
             main.appendChild(movieEl)
         }
-        
     });
 }
 
